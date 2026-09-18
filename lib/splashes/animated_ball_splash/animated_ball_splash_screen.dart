@@ -209,7 +209,6 @@ class _AnimatedBallSplashScreenState extends State<AnimatedBallSplashScreen> wit
                             child: Container(
                               height: 160,
                               width: 160,
-                              // margin: EdgeInsets.only(top: 100),
                               decoration: BoxDecoration(
                                   color: CupertinoColors.systemPurple
                               ),
@@ -230,7 +229,6 @@ class _AnimatedBallSplashScreenState extends State<AnimatedBallSplashScreen> wit
                             child: Container(
                               height: 160,
                               width: 160,
-                              // margin: EdgeInsets.only(bottom: 100),
                               decoration: BoxDecoration(
                                   color: CupertinoColors.systemPink
                               ),
@@ -241,22 +239,18 @@ class _AnimatedBallSplashScreenState extends State<AnimatedBallSplashScreen> wit
 
                       SlideTransition(
                         position: CurvedAnimation(
-                            parent: _greenAnimationController,
-                            curve: Curves.easeInOut
+                          parent: _greenAnimationController,
+                          curve: Curves.easeInOut
                         ).drive(_greenOffset),
                         child: Align(
-                          // top: 0,
-                          // left: 0,
-                          // right: 0,
                           alignment: Alignment.topCenter,
                           child: Transform.rotate(
                             angle: 150,
                             child: Container(
                               height: 160,
                               width: 160,
-                              // margin: const EdgeInsets.only(bottom: 100),
                               decoration: BoxDecoration(
-                                  color: CupertinoColors.systemGreen
+                                color: CupertinoColors.systemGreen
                               ),
                             ),
                           ),
