@@ -1,4 +1,5 @@
 import 'package:animated_colorful_splash_screen/splashes/animated_ball_splash/animated_ball_splash_screen.dart';
+import 'package:animated_colorful_splash_screen/splashes/animated_jet_startup/animated_jet_startup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const AnimatedBallSplashScreen(),
+      // home: const AnimatedBallSplashScreen(),
+      home: const AnimatedJetStartupScreen(),
     );
   }
 }
